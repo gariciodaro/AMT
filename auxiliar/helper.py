@@ -17,7 +17,8 @@ def image_splitter(grey_image,box):
     smaller images.
     Return:
     images_cropped: A list containing each split
-    map_cropped: a dictionary, keys: index of the split, values: the origin of the box in the original
+    map_cropped: a dictionary, keys: index of the split, 
+    values: the origin of the box in the original
     image coordinates.
     """
     map_cropped={}
@@ -37,10 +38,20 @@ def image_splitter(grey_image,box):
 
 
 def save_object(path,object):
+    """ save pickle files into
+    enviroment
+    input: string path
+    out: python object
+    """
     with open(path,"wb") as f:
         pickle.dump(object,f,pickle.HIGHEST_PROTOCOL)
 
 def load_object(path):
+    """ Load pickle files into
+    enviroment
+    input: string path
+    out: python object
+    """
     with open(path,"rb") as f:
         file = pickle.load(f) 
     return file

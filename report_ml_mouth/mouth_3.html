@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>/mouth_3</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<style type="text/css">
+    body{
+        background-color: #031740;
+        font-family: 'Libre Baskerville', serif;
+      font-variant-ligatures: common-ligatures;
+      font-kerning:auto;
+      color: #BF7000;
+    }
+    .container{
+        background-color: white;
+    }
+    p,tbody,ul{
+    color: #082640;
+    }
+
+
+
+</style>
+<body>
+    
+    <div class="container" style="padding-top: 20px;border-radius: 25px;">
+        <div class="row">
+            <div class="col-md-4" style="padding-left: 100px">
+                <img src="./img/logo.png"  style="height:11em"/>
+            </div>
+            <div class="col-md-6" style="text-align: left;padding-top: 3em;padding-right: 5em;">
+                <h2>Report on Machine learning Mouth report</h2>
+                <hr/>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <p style="padding: 2em"><i class="fas fa-hand-point-right"></i> The baseline model. The following results used the default configuration of each classifier, therefore, they are very fast to train. The software will take the highest score model in terms of CV validation error, plus the model with the lowest standard deviation.</p>
+            <center style="overflow: auto;">
+            <img src="./img/base_line.png"/>
+            </center>
+        </div>
+
+        <div class="col-md-12" , style="margin: auto;">
+            
+        </div>
+
+        <div class="col-md-12", style="margin: auto;">
+            <p style="padding: 2em"><i class="fas fa-hand-point-right"></i> Receiver Operating Characteristic (ROC) of the best classifier: XGB. The following plots correspont to the final output classifier</p>
+            <center style="overflow: auto;">
+                <img src="./img/roc_plot.png" />
+                </center>
+        </div>
+
+        <div style="padding: 2em">
+            <p><i class="fas fa-hand-point-right"></i> General comments:</p>
+            <ul>
+                <li>
+                    Optimized metric: f1_score
+                </li>
+                <li>
+                    clustering: False
+                </li>
+                <li>
+                    polynomial: False
+                </li>
+                <li>
+                    balanced train: True
+                </li>
+                <li>
+                    Selected Machine Learning algorithm: XGB
+                </li>
+                <li>
+                    Selected Hiper-Parameters: {'min_child_weight': 1, 'max_depth': 3, 'learning_rate': 0.1, 'reg_alpha': 0.02, 'reg_lambda': 0.8, 'gamma': 0.002, 'subsample': 1.0, 'colsample_bytree': 1.0, 'objective': 'binary:logistic', 'nthread': -1, 'scale_pos_weight': 1, 'seed': 10, 'n_estimators': 200}
+                </li>
+                <li>
+                    Final Training Score after Hiper-Parameters tunning or Further optimization: 0.8571759169977243
+                </li>
+                <li>
+                    Expected score on unseen data: 0.11570247933884296
+                </li>
+                <li>
+                    Your report, as well as the pickle file containing your classifier, is available in: /home/gari/Desktop/ajustar_com/competencia/mouth_3
+                </li>
+                <li>
+                    Measured processing time: 1831.7083439826965  
+                </li>
+                <li>
+                    Training score for full data set: 0.8575462277469784
+                </li>
+                
+            </ul>
+        </div>
+        <center>
+        <div style="padding: 2em" style="overflow: auto;">
+            <h4 style="text-align: center;margin: auto;">Best Results Testing Model 1:</h4>
+        <hr/>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>index</th>
+      <th>name_model</th>
+      <th>validation score</th>
+      <th>params</th>
+      <th>iteration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>8</td>
+      <td>XGB</td>
+      <td>0.106681</td>
+      <td>{'min_child_weight': 1, 'max_depth': 3, 'learn...</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>XGB</td>
+      <td>0.105878</td>
+      <td>{'min_child_weight': 1, 'max_depth': 3, 'learn...</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>5</td>
+      <td>XGB</td>
+      <td>0.0998829</td>
+      <td>{'min_child_weight': 1, 'max_depth': 10, 'lear...</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10</td>
+      <td>XGB</td>
+      <td>0.0959497</td>
+      <td>{'min_child_weight': 1, 'max_depth': 3, 'learn...</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>15</td>
+      <td>XGB</td>
+      <td>0.0957135</td>
+      <td>{'min_child_weight': 1, 'max_depth': 7, 'learn...</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>3</td>
+      <td>XGB</td>
+      <td>0.0942708</td>
+      <td>{'min_child_weight': 1, 'max_depth': 10, 'lear...</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>16</td>
+      <td>XGB</td>
+      <td>0.0930909</td>
+      <td>{'min_child_weight': 1, 'max_depth': 9, 'learn...</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1</td>
+      <td>XGB</td>
+      <td>0.0926554</td>
+      <td>{'min_child_weight': 1, 'max_depth': 10, 'lear...</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>17</td>
+      <td>XGB</td>
+      <td>0.0923876</td>
+      <td>{'min_child_weight': 1, 'max_depth': 3, 'learn...</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>14</td>
+      <td>XGB</td>
+      <td>0.0871185</td>
+      <td>{'min_child_weight': 1, 'max_depth': 10, 'lear...</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0</td>
+      <td>XGB</td>
+      <td>0.0835656</td>
+      <td>{'min_child_weight': 1, 'max_depth': 10, 'lear...</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>11</td>
+      <td>XGB</td>
+      <td>0.083521</td>
+      <td>{'min_child_weight': 1, 'max_depth': 9, 'learn...</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>9</td>
+      <td>XGB</td>
+      <td>0.0835189</td>
+      <td>{'min_child_weight': 1, 'max_depth': 10, 'lear...</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>19</td>
+      <td>XGB</td>
+      <td>0.0826248</td>
+      <td>{'min_child_weight': 1, 'max_depth': 9, 'learn...</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>13</td>
+      <td>XGB</td>
+      <td>0.081782</td>
+      <td>{'min_child_weight': 1, 'max_depth': 9, 'learn...</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>4</td>
+      <td>XGB</td>
+      <td>0.0815605</td>
+      <td>{'min_child_weight': 1, 'max_depth': 7, 'learn...</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>12</td>
+      <td>XGB</td>
+      <td>0.0814061</td>
+      <td>{'min_child_weight': 1, 'max_depth': 9, 'learn...</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>6</td>
+      <td>XGB</td>
+      <td>0.0812209</td>
+      <td>{'min_child_weight': 1, 'max_depth': 10, 'lear...</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>7</td>
+      <td>XGB</td>
+      <td>0.0800655</td>
+      <td>{'min_child_weight': 1, 'max_depth': 7, 'learn...</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>18</td>
+      <td>XGB</td>
+      <td>0.0789972</td>
+      <td>{'min_child_weight': 1, 'max_depth': 9, 'learn...</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <div style="padding: 2em" style="overflow: auto;">
+            <h4 style="text-align: center;margin: auto;">Best Results Testing Model 2:</h4>
+        <hr/>
+             <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>index</th>
+      <th>name_model</th>
+      <th>validation score</th>
+      <th>params</th>
+      <th>iteration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>18</td>
+      <td>QDA</td>
+      <td>0.104884</td>
+      <td>{'reg_param': 0.026}</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>17</td>
+      <td>QDA</td>
+      <td>0.102155</td>
+      <td>{'reg_param': 0.04}</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4</td>
+      <td>QDA</td>
+      <td>0.102155</td>
+      <td>{'reg_param': 0.04}</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>19</td>
+      <td>QDA</td>
+      <td>0.101594</td>
+      <td>{'reg_param': 0.03}</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>8</td>
+      <td>QDA</td>
+      <td>0.101594</td>
+      <td>{'reg_param': 0.03}</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>7</td>
+      <td>QDA</td>
+      <td>0.101155</td>
+      <td>{'reg_param': 0.83}</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>13</td>
+      <td>QDA</td>
+      <td>0.101155</td>
+      <td>{'reg_param': 0.83}</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>10</td>
+      <td>QDA</td>
+      <td>0.0898317</td>
+      <td>{'reg_param': 0.7}</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>12</td>
+      <td>QDA</td>
+      <td>0.080996</td>
+      <td>{'reg_param': 0.2}</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>3</td>
+      <td>QDA</td>
+      <td>0.080996</td>
+      <td>{'reg_param': 0.2}</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2</td>
+      <td>QDA</td>
+      <td>0.080996</td>
+      <td>{'reg_param': 0.2}</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>0</td>
+      <td>QDA</td>
+      <td>0.080996</td>
+      <td>{'reg_param': 0.2}</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>6</td>
+      <td>QDA</td>
+      <td>0.0777271</td>
+      <td>{'reg_param': 0.5}</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>15</td>
+      <td>QDA</td>
+      <td>0.0777271</td>
+      <td>{'reg_param': 0.5}</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>9</td>
+      <td>QDA</td>
+      <td>0.0730908</td>
+      <td>{'reg_param': 0.4}</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>5</td>
+      <td>QDA</td>
+      <td>0.0730908</td>
+      <td>{'reg_param': 0.4}</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>14</td>
+      <td>QDA</td>
+      <td>0.0724118</td>
+      <td>{'reg_param': 0.45}</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>16</td>
+      <td>QDA</td>
+      <td>0.0724118</td>
+      <td>{'reg_param': 0.45}</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1</td>
+      <td>QDA</td>
+      <td>0.0351425</td>
+      <td>{'reg_param': 1e-05}</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>11</td>
+      <td>QDA</td>
+      <td>0.0345776</td>
+      <td>{'reg_param': 0.0}</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        </center>
+
+
+<h3>Developed by Gari Ciodaro Guerra</h3>
+    </div>
+
+</body>
+</html>
