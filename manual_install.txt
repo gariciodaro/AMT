@@ -1,0 +1,7 @@
+# Tested on ubunto 16
+conda create -n shiny python=3.7
+conda install -c conda-forge xgboost==0.90
+pip install scikit-learn===0.21.3
+pip install pandas==0.24.2
+pip install matplotlib===3.1.0
+conda install -c conda-forge opencv==3.4.2
