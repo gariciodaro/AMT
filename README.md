@@ -36,7 +36,11 @@ Use <b>conda create --name AMT --file requirements.txt</b>
 
 Run AMT.py example terminal: 
 <p><b> conda activate AMT</b></p>
-<p><b> python AMT.py 'A nigricans 16.7 SL-20.8 TL.jpg' </b></p>
+<p><b> python AMT.py 'A nigricans 16.7 SL-20.8 TL.jpg' yes True</b></p>
+<p><b> python AMT.py 'A nigricans 16.7 SL-20.8 TL.jpg' no False</b></p>
+
+<p>The first parameter  (yes/no) activates or deactivates the fin detection, this speeds up the process greatly</p>
+<p>The second parameter (True/False) changes the eye detection selection, try both if the eye is not detected</p>
 
 The image should be
 place in the "./image/" folder
