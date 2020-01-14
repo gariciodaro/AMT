@@ -45,3 +45,5 @@ Run AMT.py example terminal:
 The image should be
 place in the "./image/" folder
 
+# See the demostration on see_me_demo.html
+
