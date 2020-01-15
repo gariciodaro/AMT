@@ -5,9 +5,11 @@ Automatic measurements of Physical Traits of Fish
 Create a Python software to automatically measure fish's traits giving a photo.
 
 <ul>
-<li>working_notebook.ipynb: jupyter notebook where i am doing the development</li>
-<li>FL_draw.py: isolated python script to meausere fish's traits</li>
+<li>see_mee_demo.ipynb: jupyter notebook with a demo</li>
+<li>AMT.py: isolated python script to measure fish's traits</li>
 <li>auxiliar/helper.py: python script with the basic functions for image processing.</li>
+<li>auxiliar/classes: folder with auxiliar classes.</li>
+<li>report_ml_*: folser with machine learning reports</li>
 </ul>
 
 # Requeriments. 
