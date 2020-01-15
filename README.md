@@ -10,6 +10,7 @@ Create a Python software to automatically measure fish's traits giving a photo.
 <li>auxiliar/helper.py: python script with the basic functions for image processing.</li>
 <li>auxiliar/classes: folder with auxiliar classes.</li>
 <li>report_ml_*: folder with machine learning reports</li>
+<li>report.pdf: theoretical summary</li> 
 </ul>
 
 # Requeriments. 
