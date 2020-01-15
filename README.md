@@ -1,5 +1,8 @@
 # AMT
-Automatic measurements of Physical Traits of Fish
+Automatic measurements of Physical Traits of Fish.
+
+The image should have a black background and good quality.
+The name of the picture should contain the TL (Total Lenght in physical dimensions, cm, in, etc.) of the fish, with the tag "TL". With that number, the software computes the transformation from pixels to cm, inches, etc. If an error occurs, the distances will be shown in pixels. example of correctly formatted picture name: S schlegeli 15.7 SL-18.8 TL.jpg
 
 # Advanced project 2
 Create a Python software to automatically measure fish's traits giving a photo.
