@@ -14,7 +14,7 @@ Create a Python software to automatically measure fish's traits giving a photo.
 </ul>
 
 # Requeriments. 
-(Python 3.7). To setup (Tested on ubunto 16):
+(Python 3.7). To setup (Tested on ubuntu 16):
 
 <ul>
 <li>clone the repository</li>
@@ -26,8 +26,9 @@ Create a Python software to automatically measure fish's traits giving a photo.
 </ul>
 <li><b>conda create -n AMT python=3.7</b></li>
 <li><b>conda activate AMT </b></li>
-<li><b>conda install -c conda-forge xgboost==0.90</b></li>
+<li>on ubuntu:<b>conda install -c conda-forge xgboost==0.90</b>. on Windows <b>conda install -c anaconda py-xgboost==0.90</b></li>
 <li><b>pip install scikit-learn===0.21.3</b></li>
+<li><b>pip install pandas==0.24.2</b></li>
 <li><b>pip install matplotlib===3.1.0</b></li>
 <li><b>conda install -c conda-forge opencv==3.4.2</b></li>
 </ul>
