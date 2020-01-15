@@ -25,6 +25,7 @@ Create a Python software to automatically measure fish's traits giving a photo.
 <li>On terminal:</li>
 </ul>
 <li><b>conda create -n AMT python=3.7</b></li>
+<li><b>conda activate AMT </b></li>
 <li><b>conda install -c conda-forge xgboost==0.90</b></li>
 <li><b>pip install scikit-learn===0.21.3</b></li>
 <li><b>pip install matplotlib===3.1.0</b></li>
