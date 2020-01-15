@@ -29,7 +29,7 @@ Create a Python software to automatically measure fish's traits giving a photo.
 <li>on ubuntu: <b>conda install -c conda-forge xgboost==0.90</b>. on Windows <b>conda install -c anaconda py-xgboost==0.90</b></li>
 <li><b>pip install scikit-learn==0.21.3</b></li>
 <li><b>pip install pandas==0.24.2</b></li>
-<li><b>pip install matplotlib===3.1.0</b></li>
+<li><b>pip install matplotlib==3.1.0</b></li>
 <li><b>conda install -c conda-forge opencv==3.4.2</b></li>
 </ul>
 
