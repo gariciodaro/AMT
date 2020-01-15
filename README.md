@@ -26,14 +26,14 @@ Create a Python software to automatically measure fish's traits giving a photo.
 </ul>
 <li><b>conda create -n AMT python=3.7</b></li>
 <li><b>conda activate AMT </b></li>
-<li>on ubuntu:<b>conda install -c conda-forge xgboost==0.90</b>. on Windows <b>conda install -c anaconda py-xgboost==0.90</b></li>
-<li><b>pip install scikit-learn===0.21.3</b></li>
+<li>on ubuntu: <b>conda install -c conda-forge xgboost==0.90</b>. on Windows <b>conda install -c anaconda py-xgboost==0.90</b></li>
+<li><b>pip install scikit-learn==0.21.3</b></li>
 <li><b>pip install pandas==0.24.2</b></li>
 <li><b>pip install matplotlib===3.1.0</b></li>
 <li><b>conda install -c conda-forge opencv==3.4.2</b></li>
 </ul>
 
-# Requeriments by txt file
+# Requeriments by txt file (Only on ubuntu)
 Use <b>conda create --name AMT --file requirements.txt</b>
 
 # To use:
@@ -41,8 +41,8 @@ Use <b>conda create --name AMT --file requirements.txt</b>
 
 Run AMT.py example terminal: 
 <p><b> conda activate AMT</b></p>
-<p><b> python AMT.py 'A nigricans 16.7 SL-20.8 TL.jpg' yes True</b></p>
-<p><b> python AMT.py 'A nigricans 16.7 SL-20.8 TL.jpg' no False</b></p>
+<p><b> python AMT.py 'S quoyi 12.3 SL-15.2 TL.jpg' yes True</b></p>
+<p><b> python AMT.py 'S quoyi 12.3 SL-15.2 TL.jpg' no False</b></p>
 
 <p>The first parameter  (yes/no) activates or deactivates the fin detection, this speeds up the process greatly</p>
 <p>The second parameter (True/False) changes the eye detection selection, try both if the eye is not detected</p>
